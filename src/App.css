@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(lightskyblue, blue, rgb(113, 8, 250));
+}
+.App{
+  color: whitesmoke;
+  width: 350px;
+  height: 400px;
+  background-color: rgb(8, 8, 56);
+  border-radius: 8px;
+  margin: 5px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+h3{
+  margin-top: 30px;
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+  height: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 3px 0 0 3px;
+  border-color: blueviolet;
+  border-width: 2px;
+  background: none;
+  color: whitesmoke;
+}
+
+::placeholder{
+  padding: 5px;
+  color: whitesmoke;
+}
+
+button{
+  width: 50px;
+  height: 28px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  color: whitesmoke;
+  background-color: blueviolet;
+}
