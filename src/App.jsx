@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import './App.css'
-import Components from "./Components";
+import Input from "./Input";
+
 
 function App() {
   return (
     <div className="App">
-      <Components />
+      
+      <Input />
+
     </div>
   )
 }

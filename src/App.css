@@ -1,6 +1,9 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+
 }
 
 #root{
@@ -11,21 +14,70 @@
   align-items: center;
   background-image: linear-gradient(lightskyblue, blue, rgb(113, 8, 250));
 }
+
 .App{
-  color: whitesmoke;
-  width: 350px;
-  height: 400px;
-  background-color: rgb(8, 8, 56);
-  border-radius: 8px;
-  margin: 5px;
+  display: flex;
 }
+
+h1{
+  position: sticky;
+  transform: scale();
+  
+}
+
 .content{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   gap: 10px;
 }
+
+.input{
+  color: whitesmoke;
+  width: 450px;
+  height: 350px;
+  background-color: rgb(22, 22, 79);
+  border-radius: 8px;
+  margin: 5px;
+  text-align: center;
+}
+
+.result{
+  color: whitesmoke;
+  width: 450px;
+  height: 350px;
+  background-color: rgb(22, 22, 79);
+  border-radius: 8px;
+  margin: 5px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.to-do-card{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background:  cornflowerblue;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: blueviolet;
+}
+
 h3{
   margin-top: 30px;
   color: whitesmoke;
@@ -50,7 +102,7 @@ input{
 button{
   width: 50px;
   height: 28px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
   border: none;
   border-radius: 0 3px 3px 0;
   color: whitesmoke;
