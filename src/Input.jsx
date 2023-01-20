@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Result from "./Result";
+import Swal from 'sweetalert2'
 
  
 function Input() {
@@ -9,6 +10,13 @@ function Input() {
     const handleClick = () => {
         setTodo((curr)=>([...curr, state]))
         setState("")
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Your todo has been added to cart...',
+          showConfirmButton: false,
+          timer: 1300
+        })
     }
 
     const handleChange = (event) => {
@@ -31,7 +39,9 @@ function Input() {
         <button 
         className="addButton" 
         type="submit"
-        onClick={handleClick}
+        onClick={
+          
+          handleClick}
         >Add</button>
       </div>
       <Result todo={todo} setTodo={setTodo}/> 
