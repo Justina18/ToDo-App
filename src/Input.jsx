@@ -39,9 +39,7 @@ function Input() {
         <button 
         className="addButton" 
         type="submit"
-        onClick={
-          
-          handleClick}
+        onClick={ handleClick}
         >Add</button>
       </div>
       <Result todo={todo} setTodo={setTodo}/> 
